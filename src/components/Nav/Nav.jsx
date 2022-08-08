@@ -67,7 +67,13 @@ const Nav = () => {
       ) : (
         <>
           <Box>
-            <Flex bg={isDark ? 'brand.blackP' : 'white'} z-index='1' m='3'>
+            <Flex
+              bg={isDark ? 'brand.blackP' : 'white'}
+              z-index='100'
+              p='3'
+              w='100%'
+              position='fixed'
+            >
               <IconButton
                 icon={<FaBars />}
                 onClick={onOpen}
