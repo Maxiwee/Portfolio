@@ -67,7 +67,13 @@ const Nav = () => {
       ) : (
         <>
           <Box>
-            <Flex bg={isDark ? 'brand.blackP' : 'white'} z-index='1' m='3'>
+            <Flex
+              bg={isDark ? 'brand.blackP' : 'white'}
+              z-index='100'
+              p='3'
+              w='100%'
+              position='fixed'
+            >
               <IconButton
                 icon={<FaBars />}
                 onClick={onOpen}
@@ -90,10 +96,15 @@ const Nav = () => {
             onClose={onClose}
             isOpen={isOpen}
             size={'full'}
+            returnFocusOnClose={false}
           >
             <DrawerOverlay />
             <DrawerContent bg={isDark ? 'brand.blackP' : 'white'} h='50%'>
-              <DrawerHeader borderBottomWidth='1px'>Portfolio.</DrawerHeader>
+              <DrawerHeader borderBottomWidth='1px'>
+                <Link href='#header' onClick={onClose}>
+                  Portfolio.
+                </Link>
+              </DrawerHeader>
               <DrawerBody>
                 <VStack h='100%' fontSize='1.5em'>
                   <Box width='100%' p='2'>
@@ -102,10 +113,14 @@ const Nav = () => {
                     </Link>
                   </Box>
                   <Box width='100%' p='2'>
-                    <Link href='#project'>Proyectos</Link>
+                    <Link href='#projects' onClick={onClose}>
+                      Proyectos
+                    </Link>
                   </Box>
                   <Box width='100%' p='2'>
-                    <Link href='#contact'>Contactame</Link>
+                    <Link href='#contact' onClick={onClose}>
+                      Contactame
+                    </Link>
                   </Box>
                 </VStack>
               </DrawerBody>
