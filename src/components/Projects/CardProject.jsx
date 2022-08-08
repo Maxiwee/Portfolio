@@ -16,7 +16,7 @@ const CardProject = ({
           borderRadius='lg'
           width={'15rem'}
           src={img}
-          alt='Woman paying for a purchase'
+          alt={`Project ${title}`}
         />
       </Box>
       <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>

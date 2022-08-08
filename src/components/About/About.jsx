@@ -8,7 +8,7 @@ const About = () => {
         direction='column'
         align='center'
         gap='1.5rem'
-        pt={{ base: '0', sm: '9rem' }}
+        pt={{ base: '5rem', sm: '9rem' }}
         h='100vh'
       >
         <Text

@@ -25,11 +25,13 @@ const ModalProject = ({ img, title, descrption, urlProyect, urlGitHub }) => {
   const { colorMode } = useColorMode();
   const isDark = colorMode === 'dark';
   return (
-    <Box>
-      <Button
+    <Box mt='2'>
+      <Link
         onClick={onOpen}
         bg={isDark ? 'white' : 'brand.blackP'}
         color={isDark ? 'brand.blackP' : 'white'}
+        p='1'
+        borderRadius='3px'
         _hover={
           isDark
             ? {
@@ -47,7 +49,7 @@ const ModalProject = ({ img, title, descrption, urlProyect, urlGitHub }) => {
         }
       >
         Más
-      </Button>
+      </Link>
 
       <Modal
         closeOnOverlayClick={false}
