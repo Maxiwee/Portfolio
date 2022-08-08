@@ -17,7 +17,7 @@ const About = () => {
           textAlign='center'
           mb='1rem'
           color='brand.yellowP'
-          textShadow='-1px -1px #00000030'
+          textShadow='-1px -1px #000000'
         >
           Sobre Mí
         </Text>

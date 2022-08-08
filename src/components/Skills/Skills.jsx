@@ -13,7 +13,7 @@ export const Skills = () => {
         pt={{ base: '0', sm: '2rem' }}
         mb={{ base: '0', sm: '2rem' }}
         color='brand.yellowP'
-        textShadow='-1px -1px #00000030'
+        textShadow='-1px -1px #000000'
       >
         Habilidades
       </Text>

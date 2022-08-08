@@ -44,7 +44,7 @@ const Header = () => {
             display={'inline'}
             color='brand.yellowP'
             fontWeight='bold'
-            textShadow='-1px -1px #00000030'
+            textShadow='-1px -1px #000000'
           >
             Maximiliano
           </Text>

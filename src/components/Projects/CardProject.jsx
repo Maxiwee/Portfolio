@@ -1,6 +1,14 @@
 import { Box, Image, Link, Text } from '@chakra-ui/react';
+import ModalProject from './ModalProject';
 
-const CardProject = ({ img, title, skills }) => {
+const CardProject = ({
+  img,
+  title,
+  skills,
+  description,
+  urlProyect,
+  urlGitHub,
+}) => {
   return (
     <Box p={4} display={{ md: 'flex' }}>
       <Box flexShrink={0}>
@@ -15,10 +23,10 @@ const CardProject = ({ img, title, skills }) => {
         <Text
           fontWeight='bold'
           textTransform='uppercase'
-          fontSize='md'
+          fontSize='1.2rem'
           letterSpacing='wide'
           color='brand.yellowP'
-          textShadow='-1px -1px #00000030'
+          textShadow='-1px -1px #00000080'
         >
           {title}
         </Text>
@@ -28,16 +36,13 @@ const CardProject = ({ img, title, skills }) => {
         <Text color='gray.500' display='inline'>
           {skills}
         </Text>
-        <Link
-          mt={1}
-          display='block'
-          fontSize='sm'
-          lineHeight='normal'
-          fontWeight='semibold'
-          href='#'
-        >
-          Más
-        </Link>
+        <ModalProject
+          img={img}
+          title={title}
+          descrption={description}
+          urlProyect={urlProyect}
+          urlGitHub={urlGitHub}
+        />
       </Box>
     </Box>
   );

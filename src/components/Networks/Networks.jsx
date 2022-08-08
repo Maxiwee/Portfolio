@@ -19,6 +19,7 @@ const Networks = () => {
           textAlign='center'
           mb={{ base: '0', sm: '4rem' }}
           width={'80%'}
+          textShadow='-1px -1px #000000'
         >
           Contactame
         </Text>

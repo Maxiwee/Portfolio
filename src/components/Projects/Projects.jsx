@@ -17,7 +17,7 @@ const Projects = () => {
         mb={{ base: '0', sm: '4rem' }}
         width={'80%'}
         color='brand.yellowP'
-        textShadow='-1px -1px #00000030'
+        textShadow='-1px -1px #000000'
       >
         Proyectos
       </Text>
