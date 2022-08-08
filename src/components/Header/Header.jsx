@@ -40,7 +40,12 @@ const Header = () => {
           }}
         >
           Soy{' '}
-          <Text display={'inline'} color='brand.yellowP' fontWeight='bold'>
+          <Text
+            display={'inline'}
+            color='brand.yellowP'
+            fontWeight='bold'
+            textShadow='-1px -1px #00000030'
+          >
             Maximiliano
           </Text>
           ,

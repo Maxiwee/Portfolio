@@ -11,7 +11,14 @@ const About = () => {
         pt={{ base: '0', sm: '9rem' }}
         h='100vh'
       >
-        <Text fontWeight='bold' fontSize='2em' textAlign='center' mb='1rem'>
+        <Text
+          fontWeight='bold'
+          fontSize='2em'
+          textAlign='center'
+          mb='1rem'
+          color='brand.yellowP'
+          textShadow='-1px -1px #00000030'
+        >
           Sobre Mí
         </Text>
         <Text

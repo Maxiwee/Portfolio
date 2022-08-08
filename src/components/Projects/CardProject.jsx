@@ -1,13 +1,13 @@
 import { Box, Image, Link, Text } from '@chakra-ui/react';
 
-const CardProject = ({ title, skills }) => {
+const CardProject = ({ img, title, skills }) => {
   return (
     <Box p={4} display={{ md: 'flex' }}>
       <Box flexShrink={0}>
         <Image
           borderRadius='lg'
           width={'15rem'}
-          src='https://bit.ly/2jYM25F'
+          src={img}
           alt='Woman paying for a purchase'
         />
       </Box>
@@ -15,26 +15,29 @@ const CardProject = ({ title, skills }) => {
         <Text
           fontWeight='bold'
           textTransform='uppercase'
-          fontSize='sm'
+          fontSize='md'
           letterSpacing='wide'
-          color='teal.600'
+          color='brand.yellowP'
+          textShadow='-1px -1px #00000030'
         >
-          Marketing
+          {title}
+        </Text>
+        <Text display='inline' mr='1'>
+          Tecnologias:
+        </Text>
+        <Text color='gray.500' display='inline'>
+          {skills}
         </Text>
         <Link
           mt={1}
           display='block'
-          fontSize='lg'
+          fontSize='sm'
           lineHeight='normal'
           fontWeight='semibold'
           href='#'
         >
-          Finding customers for your new business
+          Más
         </Link>
-        <Text mt={2} color='gray.500'>
-          Getting a new business off the ground is a lot of hard work. Here are
-          five ideas you can use to find your first customers.
-        </Text>
       </Box>
     </Box>
   );

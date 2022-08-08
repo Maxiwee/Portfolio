@@ -39,7 +39,9 @@ const Nav = () => {
           bg={isDark ? 'brand.blackP' : 'white'}
           id='nav'
         >
-          <Box fontSize={'30px'}>Portfolio.</Box>
+          <Box fontSize={'30px'}>
+            <Link href='#header'>Portfolio.</Link>
+          </Box>
           <Spacer />
           <HStack gap={'2em'}>
             <Box>

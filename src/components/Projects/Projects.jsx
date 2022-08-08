@@ -16,6 +16,8 @@ const Projects = () => {
         textAlign='center'
         mb={{ base: '0', sm: '4rem' }}
         width={'80%'}
+        color='brand.yellowP'
+        textShadow='-1px -1px #00000030'
       >
         Proyectos
       </Text>
