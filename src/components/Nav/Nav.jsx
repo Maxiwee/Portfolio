@@ -37,31 +37,45 @@ const Nav = () => {
           position='fixed'
           z-index='100'
           bg={isDark ? 'brand.blackP' : 'white'}
-          id='nav'
+          direction={{ base: 'column', lg: 'row' }}
         >
           <Box fontSize={'30px'}>
             <Link href='#header'>Portfolio.</Link>
           </Box>
           <Spacer />
-          <HStack gap={'2em'}>
-            <Box>
-              <Link href='#about'>Sobre Mí</Link>
+          <Box
+            display='flex'
+            justifyContent={'space-between'}
+            fontSize={{ base: '.85rem', lg: '1rem' }}
+          >
+            <HStack gap={{ base: '1rem', lg: '2rem' }}>
+              <Box>
+                <Link href='#about'>Sobre Mí</Link>
+              </Box>
+              <Box>
+                <Link href='#projects'>Proyectos</Link>
+              </Box>
+              <Box>
+                <Link href='#contact'>Contactame</Link>
+              </Box>
+              <Box>
+                <Link
+                  href='https://drive.google.com/file/d/1bqtKn4LkEuRtOTK9YWyG1yOLxJVhpEZ1/view?usp=sharing'
+                  target='_blank'
+                >
+                  CV
+                </Link>
+              </Box>
+            </HStack>
+            <Box ml={'150'}>
+              <IconButton
+                boxShadow='dark-lg'
+                icon={isDark ? <FaSun color='white' /> : <FaMoon />}
+                isRound='true'
+                onClick={toggleColorMode}
+                w='10'
+              ></IconButton>
             </Box>
-            <Box>
-              <Link href='#projects'>Proyectos</Link>
-            </Box>
-            <Box>
-              <Link href='#contact'>Contactame</Link>
-            </Box>
-          </HStack>
-          <Box ml={'150'}>
-            <IconButton
-              boxShadow='dark-lg'
-              icon={isDark ? <FaSun color='white' /> : <FaMoon />}
-              isRound='true'
-              onClick={toggleColorMode}
-              w='10'
-            ></IconButton>
           </Box>
         </Flex>
       ) : (
@@ -120,6 +134,15 @@ const Nav = () => {
                   <Box width='100%' p='2'>
                     <Link href='#contact' onClick={onClose}>
                       Contactame
+                    </Link>
+                  </Box>
+                  <Box width='100%' p='2'>
+                    <Link
+                      href='https://drive.google.com/file/d/1bqtKn4LkEuRtOTK9YWyG1yOLxJVhpEZ1/view?usp=sharing'
+                      target='_blank'
+                      onClick={onClose}
+                    >
+                      CV
                     </Link>
                   </Box>
                 </VStack>
