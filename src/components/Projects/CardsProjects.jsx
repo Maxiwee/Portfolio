@@ -41,7 +41,9 @@ const CardsProjects = () => {
       <CardProject
         img={imgHenry}
         title={'Henry Bank App'}
-        skills={'React Native, Nodejs, entre otras.'}
+        skills={
+          'Javascript, React Native, CSS, Redux, Node js, Sequelize, Express, PostgreSQL, Git Hub, Figma, Trello, entre otras.'
+        }
         description={
           'Mobile application que simula un banco para teléfonos celulares donde el usuario tiene la posibilidad de trasferir dinero como recibir dinero desde su cuenta, comprar y vender divisas, como también criptomonedas.'
         }
