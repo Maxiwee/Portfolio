@@ -60,7 +60,7 @@ const Nav = () => {
               </Box>
               <Box>
                 <Link
-                  href='https://drive.google.com/file/d/1bqtKn4LkEuRtOTK9YWyG1yOLxJVhpEZ1/view?usp=sharing'
+                  href='https://drive.google.com/file/d/1JANvVa3t1ZS814SuxAySU2RQGpErg9Mp/view?usp=sharing'
                   target='_blank'
                 >
                   CV
@@ -138,7 +138,7 @@ const Nav = () => {
                   </Box>
                   <Box width='100%' p='2'>
                     <Link
-                      href='https://drive.google.com/file/d/1bqtKn4LkEuRtOTK9YWyG1yOLxJVhpEZ1/view?usp=sharing'
+                      href='https://drive.google.com/file/d/1JANvVa3t1ZS814SuxAySU2RQGpErg9Mp/view?usp=sharing'
                       target='_blank'
                       onClick={onClose}
                     >
