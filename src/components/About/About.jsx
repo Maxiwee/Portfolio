@@ -24,7 +24,7 @@ const About = () => {
         <Text
           fontWeight='bold'
           mt={{ base: '0em', sm: '2rem' }}
-          fontSize={{ base: '1em', sm: '1.5em' }}
+          fontSize={{ base: '.9em', sm: '1.3em' }}
           w='80%'
         >
           Soy Argentino, tengo 25 años, actualmente estoy esperando mi primera
@@ -32,14 +32,22 @@ const About = () => {
           seguir ampliando mis conocimientos en este maravilloso mundo de la
           programación.
         </Text>
-        <Text fontWeight='bold' fontSize={{ base: '1em', sm: '1.5em' }} w='80%'>
+        <Text
+          fontWeight='bold'
+          fontSize={{ base: '.9em', sm: '1.3em' }}
+          w='80%'
+        >
           Estoy enfocado en él desarrolló web full stack. Soy una persona
           optimista, con pensamiento lógico, autodidacta y dedicado. Me
           desenvuelvo muy bien trabajando en equipo, ya que me gusta mucho
           cooperar y es la mejor manera de aprender como también compartir el
           conocimiento adquirido.
         </Text>
-        <Text fontWeight='bold' fontSize={{ base: '1em', sm: '1.5em' }} w='80%'>
+        <Text
+          fontWeight='bold'
+          fontSize={{ base: '.9em', sm: '1.3em' }}
+          w='80%'
+        >
           Descubrí mi pasión por la programación hace no mucho tiempo, este año
           obtuve un certificado de desarrollador web full stack y quiero
           compartir con ustedes mis habilidades. ¡¡ Bienvenidos !!
