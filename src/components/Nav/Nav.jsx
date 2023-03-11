@@ -35,7 +35,7 @@ const Nav = () => {
           borderBottomColor={isDark ? 'white' : 'black'}
           w='100%'
           position='fixed'
-          z-index='100'
+          zIndex='1'
           bg={isDark ? 'brand.blackP' : 'white'}
           direction={{ base: 'column', lg: 'row' }}
         >
@@ -53,7 +53,7 @@ const Nav = () => {
                 <Link href='#about'>Sobre Mí</Link>
               </Box>
               <Box>
-                <Link href='#projects'>Proyectos</Link>
+                <Link href='#projects'>Proyectos/Experiencia</Link>
               </Box>
               <Box>
                 <Link href='#contact'>Contactame</Link>

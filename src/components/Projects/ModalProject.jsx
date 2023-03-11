@@ -13,9 +13,6 @@ import {
   Flex,
   Link,
   useColorMode,
-  background,
-  color,
-  border,
 } from '@chakra-ui/react';
 import { Github } from '@icons-pack/react-simple-icons';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
@@ -30,6 +27,7 @@ const ModalProject = ({ img, title, descrption, urlProyect, urlGitHub }) => {
         onClick={onOpen}
         bg={isDark ? 'white' : 'brand.blackP'}
         color={isDark ? 'brand.blackP' : 'white'}
+        zIndex='0'
         _hover={
           isDark
             ? {
@@ -43,8 +41,10 @@ const ModalProject = ({ img, title, descrption, urlProyect, urlGitHub }) => {
                 color: 'brand.blackP',
                 border: '1px',
                 borderColor: 'brand.blackP',
+                zIndex: -1
               }
         }
+        
       >
         Más
       </Button>

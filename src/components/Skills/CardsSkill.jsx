@@ -14,6 +14,8 @@ import {
   Javascript,
   Sequelize,
   Github,
+  Typescript,
+  Mongodb
 } from '@icons-pack/react-simple-icons';
 
 const CardsSkill = () => {
@@ -31,7 +33,8 @@ const CardsSkill = () => {
       <CardSkill Icon={Postgresql} text={'PostgreSQL'} />
       <CardSkill Icon={Git} text={'Git'} />
       <CardSkill Icon={Github} text={'Github'} />
-      <CardSkill Icon={Gnubash} text={'Bash'} />
+      <CardSkill Icon={Typescript} text={'Typescript'} />
+      <CardSkill Icon={Mongodb} text={'MongoDB'} />
     </Box>
   );
 };

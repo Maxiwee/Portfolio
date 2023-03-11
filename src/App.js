@@ -1,5 +1,6 @@
 import { Divider } from '@chakra-ui/react';
 import About from './components/About/About.jsx';
+import Experience from './components/Experience/Experience.jsx';
 import Header from './components/Header/Header.jsx';
 import Nav from './components/Nav/Nav.jsx';
 import Networks from './components/Networks/Networks.jsx';
@@ -20,6 +21,7 @@ function App() {
       <Skills />
       <Divider />
       <Projects />
+      <Experience/>
       <Divider />
       <Networks />
     </div>

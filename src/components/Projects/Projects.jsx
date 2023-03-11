@@ -8,7 +8,6 @@ const Projects = () => {
       direction='column'
       align='center'
       pt={{ base: '0', sm: '9rem' }}
-      mb={{ base: '0', sm: '8rem' }}
     >
       <Text
         fontWeight='bold'

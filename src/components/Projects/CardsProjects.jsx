@@ -5,6 +5,7 @@ import imgDog from '../../assets/dogApp.png';
 import imgHenry from '../../assets/HenryBankApp.png';
 import imgPortfolioB from '../../assets/portfolioBlackApp.png';
 import imgPortfolioW from '../../assets/portfolioWhiteApp.png';
+import imgDasies from '../../assets/daisies_login.png';
 
 const CardsProjects = () => {
   const { colorMode } = useColorMode();
@@ -35,7 +36,6 @@ const CardsProjects = () => {
         description={
           'Single-Page-App donde el objetivo es ver distintos tipos de raza de perro y poder crear nuestra propia raza, ademas cuenta con un buscador y diferentes filtros para permitir al usuario hacer una busqueda personalizada de alguna raza de perro de su interes.'
         }
-        urlProyect={'https://app-dogs-iota.vercel.app/'}
         urlGitHub={'https://github.com/Maxiwee/App-Dogs'}
       />
       <CardProject
@@ -58,7 +58,7 @@ const CardsProjects = () => {
         }
         urlGitHub={'https://github.com/Maxiwee/Portfolio'}
       />
-    </Box>
+      </Box>
   );
 };
 
