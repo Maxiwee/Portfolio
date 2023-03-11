@@ -19,7 +19,7 @@ const CardsExperience = () => {
           description={
             'Daisies en una aplicación web-app de telemedicina destinada a las mujeres, me desmepeño en el equipo de backend, mi dia a dia es el de desarollar nuevas funcionalidades, uso de AWS básico, subir a producción las nuevas implementaciónes, solucionar bugs y proponer ideas para un mejor funciónamiento del servidor. Implementación de API externas.'
           }
-          date={'01/09/23 - Act'}
+          date={'01/09/22 - Act'}
           urlProyect={'https://daisies.mx/'}
         />
       </Box>
